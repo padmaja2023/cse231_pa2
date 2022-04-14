@@ -1,0 +1,18 @@
+
+(block $block_0
+(loop $loop_0
+(global.get $x)
+(i32.const 5)
+(i32.lt_s)
+i32.const 1
+i32.xor
+br_if $block_0
+(global.get $x)
+(i32.const 1)
+(i32.add)
+(global.set $x)
+br $loop_0
+)
+)
+      
+    )
